@@ -1,0 +1,13 @@
+{
+  "resourceType" : "ActorDefinition",
+  "id" : "us-core-responder",
+  "url" : "http://hl7.org/fhir/us/core-tg/ActorDefinition/us-core-responder",
+  "name" : "USCoreResponder",
+  "title" : "US Core Responder",
+  "status" : "draft",
+  "date": "2023-08-25",
+  "publisher": "AEGIS.net, Inc.",
+  "description" : "US Core Responder Actor",
+  "type" : "system",
+  "documentation" : "A product that responds to the data access request providing patient data. This can be thought of as the server in a client-server interaction."
+}

@@ -1,0 +1,100 @@
+# ╭──────────────────────────────────────ImplementationGuide───────────────────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see: https://fshschool.org/sushi/configuration/                         │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: hl7.fhir.us.core-tg
+canonical: 'http://hl7.org/fhir/us/core-tg'
+version: 3.1.1-1
+name: USCoreTG
+title: US Core Testing Guide
+status: draft
+publisher:
+  name: HL7 FHIR Infrastructure WG
+  url: https://hl7.org/Special/committees/fiwg
+contact:
+  - name: Richard Ettema
+    telecom:
+      - system: email
+        value: mailto:richard.ettema@aegis.net
+description: >-
+  The US Core Testing Guide is based on FHIR Version R4 and defines the formal requirements and testing artifacts for the US Core 3.1.1 Implementation Guide.
+
+  This testing guide demonstrates the potential process that can be leveraged in FHIR IG authoring to provide formalized requirements and corresponding testing artifacts to aid in implementation efforts.
+
+license: CC0-1.0
+fhirVersion: 4.0.1
+dependencies:
+  hl7.fhir.us.core: 3.1.1
+  net.aegis.touchstone.fhir.testing:
+    uri: 'http://touchstone.aegis.net/touchstone/fhir/testing/ImplementationGuide/net.aegis.touchstone.touchstone.fhir.testing'
+    version: 1.6.0
+    id: testing
+parameters:
+  path-resource:
+    - input/resources
+    - fsh-generated/resources
+  path-pages:
+    - input/pagecontent
+    - fsh-generated/includes
+  path-expansion-params: '../../input/_resources/exp-params.json'  # for using US ed of SNOMED
+  show-inherited-invariants: 'false'
+  logging: progress
+  shownav: 'true'
+  active-tables: 'false'
+  apply-contact: 'true'
+  apply-jurisdiction: 'true'
+  apply-publisher: 'true'
+  apply-version: 'true'
+  usage-stats-opt-out: 'true'
+  excludettl: 'true'
+  excludemap: 'true'
+  validation: 'allow-any-extensions'
+
+copyrightYear: 2023+
+releaseLabel: ci-build
+jurisdiction: 'urn:iso:std:iso:3166#US'
+
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │  To control the menu.xml using this config, uncomment and set the "menu" property.             │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+menu:
+  Contents: toc.html
+  Home: index.html
+  Guidance:
+    Conformance: conformance.html
+    Testing: testing.html
+    Safety and Security: safety_security.html
+  Artifacts:
+    Actor Definitions: artifacts.html#requirements-actor-definitions
+    Formal Requirements: artifacts.html#requirements-formal-requirements
+    Capability Statements: artifacts.html#behavior-capability-statements
+    TestPlans: artifacts.html#testing-artifacts-testplans
+    TestScripts: artifacts.html#testing-artifacts-testscripts
+    Examples: artifacts.html#example-example-instances
+  Support:
+    Downloads: downloads.html
+
+pages:
+  index.md:
+    title: Home
+  conformance.md:
+    title: Conformance
+  testing.md:
+    title: Testing
+  safety_security.md:
+    title: Safety and Security
+  downloads.md:
+    title: Downloads
+  history.md:
+    title: History
+
+resources:
+  AllergyIntolerance/example:
+    name: AllergyIntolerance Example 1
+    description: AllergyIntolerance Example 1
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance
+
+  Patient/example:
+    name: Patient Example 1
+    description: Patient Example 1
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient

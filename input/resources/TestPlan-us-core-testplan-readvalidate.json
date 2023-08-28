@@ -1,0 +1,78 @@
+{
+  "resourceType": "TestPlan",
+  "id": "us-core-testplan-readvalidate",
+  "url": "http://hl7.org/fhir/us/core-tg/TestPlan/us-core-testplan-readvalidate",
+  "name": "USCoreTestPlanreadvalidate",
+  "title": "HL7 FHIR R4 US Core Read Validate",
+  "date": "2023-08-25",
+  "description": "Example TestPlan for resource read and profile validation",
+  "status": "active",
+  "publisher": "AEGIS.net, Inc.",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/testscript-scope-phase-codes",
+          "code": "integration"
+        }
+      ]
+    }
+  ],
+  "scope": [
+    {
+      "reference": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance"
+    }
+  ],
+  "testTools": "[Touchstone FHIR Testing Platform]: https://touchstone.com ",
+  "testCase": [
+    {
+      "sequence": 1,
+      "testRun": [
+        {
+          "narrative": "Read JSON formatted AllergyIntolerance and validate against the US Core 3.1.1 AllergyIntolerance profile.",
+          "script": {
+            "language": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/testplan/language",
+                  "code": "testscript"
+                }
+              ]
+            },
+            "sourceReference": {
+              "reference": "TestScript/Allergydynamicreadvalidatejson"
+            }
+          }
+        },
+        {
+          "narrative": "Read XML formatted AllergyIntolerance and validate against the US Core 3.1.1 AllergyIntolerance profile.",
+          "script": {
+            "language": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/testplan/language",
+                  "code": "testscript"
+                }
+              ]
+            },
+            "sourceReference": {
+              "reference": "TestScript/Allergydynamicreadvalidatexml"
+            }
+          }
+        }
+      ],
+      "testData": [
+        {
+          "type": {
+            "system": "http://example.org/fhir/testplan/testData-type",
+            "code": "example"
+          },
+          "content": {
+            "reference": "AllergyIntolerance/example"
+          },
+          "sourceString": "Example AllergyIntolerance resource from the US Core 3.1.1 Implementation Guide"
+        }
+      ]
+    }
+  ]
+}

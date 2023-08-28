@@ -1,0 +1,62 @@
+{
+  "resourceType": "TestPlan",
+  "id": "us-core-testplan-capabilities",
+  "url": "http://hl7.org/fhir/us/core-tg/TestPlan/us-core-testplan-capabilities",
+  "name": "USCoreTestPlancapabilities",
+  "title": "HL7 FHIR R4 US Core Capabilities",
+  "date": "2023-08-25",
+  "description": "Example TestPlan to verify a FHIR server's CapabilityStatement conformance to the US Core 3.1.1 IG",
+  "status": "active",
+  "publisher": "AEGIS.net, Inc.",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/testscript-scope-phase-codes",
+          "code": "integration"
+        }
+      ]
+    }
+  ],
+  "scope": [
+    {
+      "reference": "http://hl7.org/fhir/us/core/CapabilityStatement/us-core-server"
+    }
+  ],
+  "testTools": "[Touchstone FHIR Testing Platform]: https://touchstone.com ",
+  "testCase": [
+    {
+      "sequence": 1,
+      "testRun": [
+        {
+          "narrative": "Get the FHIR Server's JSON formatted CapabilityStatement and validate against the US Core 3.1.1 IG",
+          "script": {
+            "language": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/testplan/language",
+                  "code": "testscript"
+                }
+              ]
+            },
+            "sourceString": "TBD"
+          }
+        },
+        {
+          "narrative": "Get the FHIR Server's XML formatted CapabilityStatement and validate against the US Core 3.1.1 IG",
+          "script": {
+            "language": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/testplan/language",
+                  "code": "testscript"
+                }
+              ]
+            },
+            "sourceString": "TBD"
+          }
+        }
+      ]
+    }
+  ]
+}

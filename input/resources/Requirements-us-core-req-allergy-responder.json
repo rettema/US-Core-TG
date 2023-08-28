@@ -1,0 +1,96 @@
+{
+  "resourceType" : "Requirements",
+  "id" : "us-core-req-allergy-responder",
+  "url": "http://hl7.org/fhir/us/core-tg/Requirements/us-core-req-allergy-responder",
+  "name": "USCoreReqAllergyResponder",
+  "title": "US Core 3.1.1 Requirements for US Core Responder returning AllergyIntolerance",
+  "status" : "draft",
+  "date": "2023-08-25",
+  "publisher": "AEGIS.net, Inc.",
+  "description" : "US Core 3.1.1 Requirements for US Core Responder returning AllergyIntolerance",
+  "derivedFrom" : [
+    "http://hl7.org/fhir/us/core-tg/Requirements/us-core-req-security"
+  ],
+  "actor" : [
+    "http://hl7.org/fhir/us/core-tg/ActorDefinition/us-core-responder"
+  ],
+  "statement" : [
+    {
+      "key" : "us-core-req-allergy-responder-01",
+      "label" : "us-core-req-allergy-responder-01",
+      "conformance" : [
+        "SHALL"
+      ],
+      "requirement" : "The US Core Responder **SHALL** support the AllergyIntolerance read operation and return, if present, a valid and conformant US Core 3.1.1 AllergyIntolerance resource instance.",
+      "satisfiedBy" : [
+        "TestScript/Allergydynamicreadvalidatejson",
+        "TestScript/Allergydynamicreadvalidatexml"
+      ],
+      "source" : [
+        {
+          "display" : "AEGIS.net, Inc."
+        }
+      ]
+    },
+    {
+      "key" : "us-core-req-allergy-responder-02",
+      "label" : "us-core-req-allergy-responder-02",
+      "conformance" : [
+        "SHALL"
+      ],
+      "requirement" : "The US Core Responder **SHALL** support the AllergyIntolerance search operation and return, if present, valid and conformant US Core 3.1.1 AllergyIntolerance resource instance(s)."
+    },
+    {
+      "key" : "us-core-req-allergy-responder-02-a",
+      "label" : "us-core-req-allergy-responder-02-a",
+      "conformance" : [
+        "SHALL"
+      ],
+      "requirement" : "The US Core Responder **SHALL** support the AllergyIntolerance search parameter 'patient'.",
+      "derivedFrom" : "Requirements/us-core-req-allergy-responder#us-core-req-allergy-responder-02"
+    },
+    {
+      "key" : "us-core-req-allergy-responder-02-b",
+      "label" : "us-core-req-allergy-responder-02-b",
+      "conformance" : [
+        "MAY"
+      ],
+      "requirement" : "The US Core Responder **MAY** support the AllergyIntolerance search parameter 'clinical-status'.",
+      "derivedFrom" : "Requirements/us-core-req-allergy-responder#us-core-req-allergy-responder-02"
+    },
+    {
+      "key" : "us-core-req-allergy-responder-02-c",
+      "label" : "us-core-req-allergy-responder-02-c",
+      "conformance" : [
+        "SHOULD"
+      ],
+      "requirement" : "The US Core Responder **SHOULD** support the AllergyIntolerance search parameter combination of 'patient+clinical-status'.",
+      "derivedFrom" : "Requirements/us-core-req-allergy-responder#us-core-req-allergy-responder-02"
+    },
+    {
+      "key" : "us-core-req-allergy-responder-02-d",
+      "label" : "us-core-req-allergy-responder-02-d",
+      "conformance" : [
+        "SHALL"
+      ],
+      "requirement" : "The US Core Responder **SHALL** support the AllergyIntolerance search parameter _revinclude 'Provenance:target'.",
+      "derivedFrom" : "Requirements/us-core-req-allergy-responder#us-core-req-allergy-responder-02"
+    },
+    {
+      "key" : "us-core-req-allergy-responder-03",
+      "label" : "us-core-req-allergy-responder-03",
+      "conformance" : [
+        "SHOULD"
+      ],
+      "requirement" : "The US Core Responder **SHOULD** support the AllergyIntolerance vread and history-instance operations."
+    },
+    {
+      "key" : "us-core-req-allergy-responder-04",
+      "label" : "us-core-req-allergy-responder-04",
+      "conformance" : [
+        "MAY"
+      ],
+      "requirement" : "The US Core Responder **MAY** support the AllergyIntolerance create, update, patch, delete and history-type operations."
+    }
+  ]
+}

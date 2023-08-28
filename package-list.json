@@ -1,0 +1,16 @@
+{
+    "package-id": "hl7.fhir.us.core-tg",
+    "title": "US Core TG",
+    "canonical": "http://hl7.org/fhir/us/core-tg",
+    "introduction": "This Testing Guide demonstrates the potential process that can be leveraged in FHIR IG authoring to provide formalized requirements and corresponding testing artifacts to aid in implementation efforts.",
+    "list": [
+        {
+            "version": "current",
+            "desc": "Continuous Integration Build (latest in version control) - Content subject to frequent changes.",
+            "path": "http://build.fhir.org/ig/HL7/us-core-tg",
+            "status": "ci-build",
+            "fhirversion": "4.0.1"
+        }
+    ],
+    "category": "Foundation"
+}

@@ -1,0 +1,13 @@
+{
+  "resourceType" : "ActorDefinition",
+  "id" : "us-core-requestor",
+  "url" : "http://hl7.org/fhir/us/core-tg/ActorDefinition/us-core-requestor",
+  "name" : "USCoreRequestor",
+  "title" : "US Core Requestor",
+  "status" : "draft",
+  "date": "2023-08-25",
+  "publisher": "AEGIS.net, Inc.",
+  "description" : "US Core Requestor Actor",
+  "type" : "system",
+  "documentation" : "An application that initiates a data access request to retrieve patient data. This can be thought of as the client in a client-server interaction."
+}
