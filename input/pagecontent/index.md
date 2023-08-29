@@ -12,15 +12,13 @@ The goal of publishing this guide is to provide a potential standard approach to
 | **Role** | **Name** | **Organization** |
 | -------- | -------- | ---------------- |
 | Author | Richard Ettema | AEGIS.net, Inc. |
-| Author | Jeff Helman | AEGIS.net, Inc. |
 {: .grid }
 
 The authors gratefully acknowledge the many contributions from numerous users and facilitators who helped shape, mature, debug, and advance Developer Satisfaction:
 
 | **Role** | **Name** | **Organization** |
 | -------- | -------- | ---------------- |
-| Contributor | Reinhard Egelkraut | HL7 Austria |
-| Contributor | Oliver Egger | ahdis |
+| Contributor | | |
 {: .grid }
 
 The authors apologize if they have omitted any contributor from this list.

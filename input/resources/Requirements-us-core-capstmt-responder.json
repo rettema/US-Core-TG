@@ -1,0 +1,76 @@
+{
+  "resourceType" : "Requirements",
+  "id" : "us-core-req-capstmt-responder",
+  "url": "http://hl7.org/fhir/us/core-tg/Requirements/us-core-req-capstmt-responder",
+  "name": "USCoreReqCapStmtResponder",
+  "title": "US Core 3.1.1 Requirements for US Core Responder CapabilityStatement",
+  "status" : "draft",
+  "date": "2023-08-25",
+  "publisher": "AEGIS.net, Inc.",
+  "description" : "US Core 3.1.1 Requirements for US Core Responder returning CapabilityStatement",
+  "derivedFrom" : [
+    "http://hl7.org/fhir/us/core-tg/Requirements/us-core-req-security"
+  ],
+  "reference" : [
+    "http://hl7.org/fhir/us/core/STU3.1.1/CapabilityStatement-us-core-server.html"
+  ],
+  "actor" : [
+    "http://hl7.org/fhir/us/core-tg/ActorDefinition/us-core-responder"
+  ],
+  "statement" : [
+    {
+      "key" : "us-core-req-capstmt-responder-01",
+      "label" : "us-core-req-capstmt-responder-01",
+      "conformance" : [
+        "SHALL"
+      ],
+      "requirement" : "The US Core Responder **SHALL** support the secured HTTP (https) protocol and the use of TLS 1.2 or higher when returning the responder's CapabilityStatement.",
+      "satisfiedBy" : [
+        "TestScript-USCoreCapabilityStatementjson.html",
+        "TestScript-USCoreCapabilityStatementxml.html"
+      ],
+      "source" : [
+        {
+          "display" : "AEGIS.net, Inc."
+        }
+      ]
+    },
+    {
+      "key" : "us-core-req-capstmt-responder-02",
+      "label" : "us-core-req-capstmt-responder-02",
+      "conformance" : [
+        "SHALL"
+      ],
+      "requirement" : "The US Core Responder **SHALL** indicate support for the FHIR JSON format in the responder's CapabilityStatement.",
+      "satisfiedBy" : [
+        "TestScript-USCoreCapabilityStatementjson.html",
+        "TestScript-USCoreCapabilityStatementxml.html"
+      ],
+      "source" : [
+        {
+          "display" : "AEGIS.net, Inc."
+        }
+      ]
+    },
+    {
+      "key" : "us-core-req-capstmt-responder-03",
+      "label" : "us-core-req-capstmt-responder-03",
+      "conformance" : [
+        "SHALL"
+      ],
+      "requirement" : "The US Core Responder **SHALL** support the US Core Patient resource profile and at least one additional resource profile from the list of US Core Profiles.",
+      "satisfiedBy" : [
+        "TestScript-USCoreCapabilityStatementjson.html",
+        "TestScript-USCoreCapabilityStatementxml.html"
+      ],
+      "reference" : [
+        "http://hl7.org/fhir/us/core/STU3.1.1/CapabilityStatement-us-core-server.html#behavior"
+      ],
+      "source" : [
+        {
+          "display" : "AEGIS.net, Inc."
+        }
+      ]
+    }
+  ]
+}

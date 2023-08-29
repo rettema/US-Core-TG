@@ -11,6 +11,9 @@
   "derivedFrom" : [
     "http://hl7.org/fhir/us/core-tg/Requirements/us-core-req-security"
   ],
+  "reference" : [
+    "http://hl7.org/fhir/us/core/STU3.1.1/CapabilityStatement-us-core-server.html#allergyintolerance"
+  ],
   "actor" : [
     "http://hl7.org/fhir/us/core-tg/ActorDefinition/us-core-responder"
   ],
@@ -23,8 +26,8 @@
       ],
       "requirement" : "The US Core Responder **SHALL** support the AllergyIntolerance read operation and return, if present, a valid and conformant US Core 3.1.1 AllergyIntolerance resource instance.",
       "satisfiedBy" : [
-        "TestScript/Allergydynamicreadvalidatejson",
-        "TestScript/Allergydynamicreadvalidatexml"
+        "TestScript-Allergydynamicreadvalidatejson.html",
+        "TestScript-Allergydynamicreadvalidatexml.html"
       ],
       "source" : [
         {

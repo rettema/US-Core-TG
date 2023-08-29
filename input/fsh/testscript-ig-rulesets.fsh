@@ -1,5 +1,5 @@
 RuleSet: Profile-dynamic-read-validate-test(resource, instance_name, baseUrl, date, return_type, profile_id, profile_url, profile_description)
-* insert TSMetadata({instance_name}, {baseUrl}, {date}, "Example TestScript to test {profile_description} resource read and profile validation using {return_type} format")
+* insert TSMetadata({instance_name}, {baseUrl}, {date}, "TestScript to test {profile_description} resource read and profile validation using {return_type} format")
 * insert TSOrigin(1)
 * insert TSDestination(1)
 * insert TSProfile({profile_id}, {profile_url})
@@ -11,7 +11,7 @@ RuleSet: Profile-dynamic-read-validate-test(resource, instance_name, baseUrl, da
 * insert TSTestAssertWithProp("Confirm that the returned resource conforms to the specified profile.", false, #response, validateProfileId, "{profile_id}")
 
 RuleSet: Profile-read-validate-test(resource, resource_id, instance_name, baseUrl, date, return_type, profile_id, profile_url, profile_description)
-* insert TSMetadata({instance_name}, {baseUrl}, {date}, "Example TestScript to test {profile_description} resource read and profile validation using {return_type} format")
+* insert TSMetadata({instance_name}, {baseUrl}, {date}, "TestScript to test {profile_description} resource read and profile validation using {return_type} format")
 * insert TSOrigin(1)
 * insert TSDestination(1)
 * insert TSProfile({profile_id}, {profile_url})
