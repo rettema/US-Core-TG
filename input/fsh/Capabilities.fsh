@@ -73,12 +73,12 @@ Instance:      CapabilityUSCoreTGServerR4
 InstanceOf:    CapabilityStatement
 Usage:         #definition
 Title:         "R4 US Core TG Server Capability Statement"
-Description:   "CapabilityStatement describing the minimal required capabilities of a FHIR Server supporting the US Core 3.1.1 Testing Guide."
+Description:   "CapabilityStatement describing the minimal required capabilities of a FHIR Server supporting the US Core 4.0.0 Testing Guide."
 * insert ResourceCommonR4
 * id            = "us-core-tg-server-r4"
 * name          = "CapabilityUSCoreTGServerR4"
 * url           = "http://hl7.org/fhir/us/core-tg/CapabilityStatement/us-core-tg-server-r4"
-* description   = "CapabilityStatement describing the required and optional capabilities of a FHIR Server supporting the US Core 3.1.1 Testing Guide."
+* description   = "CapabilityStatement describing the required and optional capabilities of a FHIR Server supporting the US Core 4.0.0 Testing Guide."
 * insert CapabilityCommon
 
 * implementationGuide = "http://hl7.org/fhir/us/core-tg/ImplementationGuide/hl7.fhir.us.core-tg"

@@ -3,16 +3,16 @@
   "id" : "us-core-req-allergy-responder",
   "url": "http://hl7.org/fhir/us/core-tg/Requirements/us-core-req-allergy-responder",
   "name": "USCoreReqAllergyResponder",
-  "title": "US Core 3.1.1 Requirements for US Core Responder returning AllergyIntolerance",
+  "title": "US Core 4.0.0 Requirements for US Core Responder returning AllergyIntolerance",
   "status" : "draft",
   "date": "2023-08-25",
   "publisher": "AEGIS.net, Inc.",
-  "description" : "US Core 3.1.1 Requirements for US Core Responder returning AllergyIntolerance",
+  "description" : "US Core 4.0.0 Requirements for US Core Responder returning AllergyIntolerance",
   "derivedFrom" : [
     "http://hl7.org/fhir/us/core-tg/Requirements/us-core-req-security"
   ],
   "reference" : [
-    "http://hl7.org/fhir/us/core/STU3.1.1/CapabilityStatement-us-core-server.html#allergyintolerance"
+    "http://hl7.org/fhir/us/core/STU4/CapabilityStatement-us-core-server.html#allergyintolerance"
   ],
   "actor" : [
     "http://hl7.org/fhir/us/core-tg/ActorDefinition/us-core-responder"
@@ -24,7 +24,7 @@
       "conformance" : [
         "SHALL"
       ],
-      "requirement" : "The US Core Responder **SHALL** support the AllergyIntolerance read operation and return, if present, a valid and conformant US Core 3.1.1 AllergyIntolerance resource instance.",
+      "requirement" : "The US Core Responder **SHALL** support the AllergyIntolerance read operation and return, if present, a valid and conformant US Core 4.0.0 AllergyIntolerance resource instance.",
       "satisfiedBy" : [
         "TestScript-Allergydynamicreadvalidatejson.html",
         "TestScript-Allergydynamicreadvalidatexml.html"
@@ -41,7 +41,7 @@
       "conformance" : [
         "SHALL"
       ],
-      "requirement" : "The US Core Responder **SHALL** support the AllergyIntolerance search operation and return, if present, valid and conformant US Core 3.1.1 AllergyIntolerance resource instance(s)."
+      "requirement" : "The US Core Responder **SHALL** support the AllergyIntolerance search operation and return, if present, valid and conformant US Core 4.0.0 AllergyIntolerance resource instance(s)."
     },
     {
       "key" : "us-core-req-allergy-responder-02-a",

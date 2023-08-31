@@ -1,15 +1,15 @@
 
 ### Package File
 
-Please refer to the [US Core 3.1.1 Implementation Guide Downloads page](http://hl7.org/fhir/us/core/STU3.1.1/downloads.html) for the corresponding package file.
+Please refer to the [US Core 4.0.0 Implementation Guide Downloads page](http://hl7.org/fhir/us/core/STU4/downloads.html) for the corresponding package file.
 
 ### Definitions
 
-Please refer to the [US Core 3.1.1 Implementation Guide Downloads page](http://hl7.org/fhir/us/core/STU3.1.1/downloads.html) for the corresponding definitions files.
+Please refer to the [US Core 4.0.0 Implementation Guide Downloads page](http://hl7.org/fhir/us/core/STU4/downloads.html) for the corresponding definitions files.
 
 ### Examples
 
-Please refer to the [US Core 3.1.1 Implementation Guide Downloads page](http://hl7.org/fhir/us/core/STU3.1.1/downloads.html) for the corresponding examples files.
+Please refer to the [US Core 4.0.0 Implementation Guide Downloads page](http://hl7.org/fhir/us/core/STU4/downloads.html) for the corresponding examples files.
 
 ### Testing
 

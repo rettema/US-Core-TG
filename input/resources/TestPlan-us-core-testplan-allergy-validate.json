@@ -20,7 +20,7 @@
   ],
   "scope": [
     {
-      "reference": "http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-allergyintolerance.html"
+      "reference": "http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-allergyintolerance.html"
     }
   ],
   "testTools": "[Touchstone FHIR Testing Platform](https://touchstone.com)",
@@ -39,7 +39,7 @@
       ],
       "testRun": [
         {
-          "narrative": "Read JSON formatted AllergyIntolerance and validate against the US Core 3.1.1 AllergyIntolerance profile.",
+          "narrative": "Read JSON formatted AllergyIntolerance and validate against the US Core 4.0.0 AllergyIntolerance profile.",
           "script": {
             "language": {
               "coding": [
@@ -55,7 +55,7 @@
           }
         },
         {
-          "narrative": "Read XML formatted AllergyIntolerance and validate against the US Core 3.1.1 AllergyIntolerance profile.",
+          "narrative": "Read XML formatted AllergyIntolerance and validate against the US Core 4.0.0 AllergyIntolerance profile.",
           "script": {
             "language": {
               "coding": [
@@ -80,7 +80,7 @@
           "content": {
             "reference": "AllergyIntolerance/example"
           },
-          "sourceString": "Example AllergyIntolerance resource from the US Core 3.1.1 Implementation Guide"
+          "sourceString": "Example AllergyIntolerance resource from the US Core 4.0.0 Implementation Guide"
         }
       ]
     }

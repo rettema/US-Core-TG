@@ -5,5 +5,6 @@ This table provides a list of all the versions of the US Core Testing Implementa
 
 | **Date** | **Version** | **FHIRVersion** | **Description** |
 | -------- | ----------- | --------------- | --------------- |
-| [Aug 2023](index.html) | 3.1.1-1 |FHIR R4 (v4.0.1) | Pre-release with initial content |
+| [Aug 2023](index.html) | 4.0.0-1 | FHIR R4 (v4.0.1) | US Core Testing Guide supporting US Core 4.0.0 Implementation Guide |
+| [Aug 2023](http://wildfhir4.aegis.net/ig/uscore-tg-3.1.1/index.html) | 3.1.1-1 | FHIR R4 (v4.0.1) | US Core Testing Guide supporting US Core 3.1.1 Implementation Guide |
 {: .grid }

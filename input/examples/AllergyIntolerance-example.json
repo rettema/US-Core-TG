@@ -2,6 +2,16 @@
   "resourceType": "AllergyIntolerance",
   "id": "example",
   "meta": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "valueString": "AllergyIntolerance Example"
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "valueMarkdown": "This is a allergyintolerance example for the *US Core AllergyIntolerance Profile*."
+      }
+    ],
     "profile": [
       "http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance"
     ]
@@ -30,8 +40,8 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "387406002",
-        "display": "Sulfonamide (substance)"
+        "code": "763875007",
+        "display": "Product containing sulfonamide (product)"
       }
     ],
     "text": "sulfonamide antibacterial"

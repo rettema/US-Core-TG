@@ -9,5 +9,8 @@
   "publisher": "AEGIS.net, Inc.",
   "description" : "US Core Requestor Actor",
   "type" : "system",
-  "documentation" : "An application that initiates a data access request to retrieve patient data. This can be thought of as the client in a client-server interaction."
+  "documentation" : "An application that initiates a data access request to retrieve patient data. This can be thought of as the client in a client-server interaction.",
+  "reference" : [
+    "http://hl7.org/fhir/us/core/STU4/index.html#us-core-requestor"
+  ]
 }

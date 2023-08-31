@@ -4,7 +4,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.us.core-tg
 canonical: 'http://hl7.org/fhir/us/core-tg'
-version: 3.1.1-1
+version: 4.0.0-1
 name: USCoreTG
 title: US Core Testing Guide
 status: draft
@@ -17,14 +17,14 @@ contact:
       - system: email
         value: mailto:richard.ettema@aegis.net
 description: >-
-  The US Core Testing Guide is based on FHIR Version R4 and defines the formal requirements and testing artifacts for the US Core 3.1.1 Implementation Guide.
+  The US Core Testing Guide is based on FHIR Version R4 and defines the formal requirements and testing artifacts for the US Core 4.0.0 Implementation Guide.
 
   This testing guide demonstrates the potential process that can be leveraged in FHIR IG authoring to provide formalized requirements and corresponding testing artifacts to aid in implementation efforts.
 
 license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:
-  hl7.fhir.us.core: 3.1.1
+  hl7.fhir.us.core: 4.0.0
   net.aegis.touchstone.fhir.testing:
     uri: 'http://touchstone.aegis.net/touchstone/fhir/testing/ImplementationGuide/net.aegis.touchstone.touchstone.fhir.testing'
     version: 1.6.0

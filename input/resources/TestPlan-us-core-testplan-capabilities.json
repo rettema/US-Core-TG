@@ -5,7 +5,7 @@
   "name": "USCoreTestPlancapabilities",
   "title": "HL7 FHIR R4 US Core Capabilities",
   "date": "2023-08-25",
-  "description": "Example TestPlan to verify a FHIR server's CapabilityStatement conformance to the US Core 3.1.1 IG",
+  "description": "Example TestPlan to verify a FHIR server's CapabilityStatement conformance to the US Core 4.0.0 IG",
   "status": "active",
   "publisher": "AEGIS.net, Inc.",
   "category": [
@@ -20,7 +20,7 @@
   ],
   "scope": [
     {
-      "reference": "http://hl7.org/fhir/us/core/STU3.1.1/CapabilityStatement-us-core-server.html"
+      "reference": "http://hl7.org/fhir/us/core/STU4/CapabilityStatement-us-core-server.html"
     }
   ],
   "testTools": "[Touchstone FHIR Testing Platform](https://touchstone.com)",
@@ -39,7 +39,7 @@
       ],
       "testRun": [
         {
-          "narrative": "Get the FHIR Server's JSON formatted CapabilityStatement and validate against the US Core 3.1.1 IG",
+          "narrative": "Get the FHIR Server's JSON formatted CapabilityStatement and validate against the US Core 4.0.0 IG",
           "script": {
             "language": {
               "coding": [
@@ -55,7 +55,7 @@
           }
         },
         {
-          "narrative": "Get the FHIR Server's XML formatted CapabilityStatement and validate against the US Core 3.1.1 IG",
+          "narrative": "Get the FHIR Server's XML formatted CapabilityStatement and validate against the US Core 4.0.0 IG",
           "script": {
             "language": {
               "coding": [

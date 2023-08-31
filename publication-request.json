@@ -1,10 +1,10 @@
 {
     "package-id": "hl7.fhir.us.core-tg",
-    "version": "3.1.1-1",
+    "version": "4.0.0-1",
     "path": "http://hl7.org/fhir/us/core-tg",
     "milestone": true,
     "status": "trial-use",
     "sequence": "STU 1",
-    "desc": "US Core Testing Guide Release 3.1.1-1 - US Realm STU1",
+    "desc": "US Core Testing Guide Release 4.0.0-1 - US Realm STU1",
     "title": "US Core Testing Guide"
 }
