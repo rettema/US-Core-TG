@@ -9,5 +9,8 @@
   "publisher": "AEGIS.net, Inc.",
   "description" : "US Core Responder Actor",
   "type" : "system",
-  "documentation" : "A product that responds to the data access request providing patient data. This can be thought of as the server in a client-server interaction."
+  "documentation" : "A product that responds to the data access request providing patient data. This can be thought of as the server in a client-server interaction.",
+  "reference" : [
+    "http://hl7.org/fhir/us/core/STU3.1.1/index.html#us-core-actors"
+  ]
 }
