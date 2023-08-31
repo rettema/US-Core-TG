@@ -20,13 +20,23 @@
   ],
   "scope": [
     {
-      "reference": "http://hl7.org/fhir/us/core/CapabilityStatement/us-core-server"
+      "reference": "http://hl7.org/fhir/us/core/STU3.1.1/CapabilityStatement-us-core-server.html"
     }
   ],
-  "testTools": "[Touchstone FHIR Testing Platform]: https://touchstone.com ",
+  "testTools": "[Touchstone FHIR Testing Platform](https://touchstone.com)",
+  "dependency": [
+    {
+      "description": "**Requirements traceability:** [Requirements-us-core-req-capstmt-responder](Requirements-us-core-req-capstmt-responder.html)"
+    }
+  ],
   "testCase": [
     {
       "sequence": 1,
+      "dependency": [
+        {
+          "description": "**Requirements traceability:**\n* [us-core-req-capstmt-responder-01](Requirements-us-core-req-capstmt-responder.html#us-core-req-capstmt-responder-01)\n* [us-core-req-capstmt-responder-02](Requirements-us-core-req-capstmt-responder.html#us-core-req-capstmt-responder-02)\n* [us-core-req-capstmt-responder-03](Requirements-us-core-req-capstmt-responder.html#us-core-req-capstmt-responder-03)"
+        }
+      ],
       "testRun": [
         {
           "narrative": "Get the FHIR Server's JSON formatted CapabilityStatement and validate against the US Core 3.1.1 IG",
@@ -39,7 +49,9 @@
                 }
               ]
             },
-            "sourceString": "TestScript/USCoreCapabilityStatementjson"
+            "sourceReference": {
+              "reference": "TestScript/USCoreCapabilityStatementjson"
+            }
           }
         },
         {
@@ -53,7 +65,9 @@
                 }
               ]
             },
-            "sourceString": "TestScript/USCoreCapabilityStatementxml"
+            "sourceReference": {
+              "reference": "TestScript/USCoreCapabilityStatementxml"
+            }
           }
         }
       ]

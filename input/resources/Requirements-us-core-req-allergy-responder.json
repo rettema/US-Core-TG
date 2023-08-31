@@ -50,7 +50,7 @@
         "SHALL"
       ],
       "requirement" : "The US Core Responder **SHALL** support the AllergyIntolerance search parameter 'patient'.",
-      "derivedFrom" : "Requirements/us-core-req-allergy-responder#us-core-req-allergy-responder-02"
+      "parent" : "#us-core-req-allergy-responder-02"
     },
     {
       "key" : "us-core-req-allergy-responder-02-b",
@@ -59,7 +59,7 @@
         "MAY"
       ],
       "requirement" : "The US Core Responder **MAY** support the AllergyIntolerance search parameter 'clinical-status'.",
-      "derivedFrom" : "Requirements/us-core-req-allergy-responder#us-core-req-allergy-responder-02"
+      "parent" : "#us-core-req-allergy-responder-02"
     },
     {
       "key" : "us-core-req-allergy-responder-02-c",
@@ -68,7 +68,7 @@
         "SHOULD"
       ],
       "requirement" : "The US Core Responder **SHOULD** support the AllergyIntolerance search parameter combination of 'patient+clinical-status'.",
-      "derivedFrom" : "Requirements/us-core-req-allergy-responder#us-core-req-allergy-responder-02"
+      "parent" : "#us-core-req-allergy-responder-02"
     },
     {
       "key" : "us-core-req-allergy-responder-02-d",
@@ -77,7 +77,7 @@
         "SHALL"
       ],
       "requirement" : "The US Core Responder **SHALL** support the AllergyIntolerance search parameter _revinclude 'Provenance:target'.",
-      "derivedFrom" : "Requirements/us-core-req-allergy-responder#us-core-req-allergy-responder-02"
+      "parent" : "#us-core-req-allergy-responder-02"
     },
     {
       "key" : "us-core-req-allergy-responder-03",

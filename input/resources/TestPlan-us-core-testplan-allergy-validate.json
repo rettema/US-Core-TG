@@ -1,11 +1,11 @@
 {
   "resourceType": "TestPlan",
-  "id": "us-core-testplan-readvalidate",
-  "url": "http://hl7.org/fhir/us/core-tg/TestPlan/us-core-testplan-readvalidate",
-  "name": "USCoreTestPlanreadvalidate",
-  "title": "HL7 FHIR R4 US Core Read Validate",
+  "id": "us-core-testplan-allergy-validate",
+  "url": "http://hl7.org/fhir/us/core-tg/TestPlan/us-core-testplan-allergy-validate",
+  "name": "USCoreTestPlanAllergyValidate",
+  "title": "HL7 FHIR R4 US Core AllergyIntolerance Validate",
   "date": "2023-08-25",
-  "description": "Example TestPlan for resource read and profile validation",
+  "description": "Example TestPlan for resource AllergyIntolerance read and profile validation",
   "status": "active",
   "publisher": "AEGIS.net, Inc.",
   "category": [
@@ -20,13 +20,23 @@
   ],
   "scope": [
     {
-      "reference": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance"
+      "reference": "http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-allergyintolerance.html"
     }
   ],
-  "testTools": "[Touchstone FHIR Testing Platform]: https://touchstone.com ",
+  "testTools": "[Touchstone FHIR Testing Platform](https://touchstone.com)",
+  "dependency": [
+    {
+      "description": "**Requirements traceability:** [Requirements-us-core-req-allergy-responder](Requirements-us-core-req-allergy-responder.html)"
+    }
+  ],
   "testCase": [
     {
       "sequence": 1,
+      "dependency": [
+        {
+          "description": "**Requirements traceability:** [us-core-req-allergy-responder-01](Requirements-us-core-req-allergy-responder.html#us-core-req-allergy-responder-01)"
+        }
+      ],
       "testRun": [
         {
           "narrative": "Read JSON formatted AllergyIntolerance and validate against the US Core 3.1.1 AllergyIntolerance profile.",
